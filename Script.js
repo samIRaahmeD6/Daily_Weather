@@ -43,12 +43,26 @@ function displayWeatherInfo(data) {
 
     btn.style.backgroundColor = '#5B99C2'
     btn.style.color = 'black'
+    btn.addEventListener('mouseenter', () => {
+      btn.style.backgroundColor = '#4A7A92'
+    })
+
+    btn.addEventListener('mouseleave', () => {
+      btn.style.backgroundColor = '#5B99C2'
+    })
 
     input2.style.backgroundColor = '#5B99C2'
     input2.style.color = 'black'
 
     btn2.style.backgroundColor = '#5B99C2'
     btn2.style.color = 'black'
+    btn2.addEventListener('mouseenter', () => {
+      btn2.style.backgroundColor = '#4A7A92'
+    })
+
+    btn2.addEventListener('mouseleave', () => {
+      btn2.style.backgroundColor = '#5B99C2'
+    })
 
     for (let i = 0; i < info.length; i++) {
       info[i].style.backgroundColor = '#5B99C2'
@@ -65,10 +79,23 @@ function displayWeatherInfo(data) {
 
     btn.style.backgroundColor = '#181C14'
     btn.style.color = '#ECDFCC'
+    btn.addEventListener('mouseenter', () => {
+      btn.style.backgroundColor = '#232323'
+    })
+
+    btn.addEventListener('mouseleave', () => {
+      btn.style.backgroundColor = '#181C14'
+    })
 
     btn2.style.backgroundColor = '#181C14'
     btn2.style.color = '#ECDFCC'
+    btn2.addEventListener('mouseenter', () => {
+      btn2.style.backgroundColor = '#232323'
+    })
 
+    btn2.addEventListener('mouseleave', () => {
+      bt2.style.backgroundColor = '#181C14'
+    })
     for (let i = 0; i < info.length; i++) {
       info[i].style.backgroundColor = '#181C14'
     }
