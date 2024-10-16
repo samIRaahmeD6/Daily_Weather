@@ -1,4 +1,4 @@
-const base_url = 'http://api.weatherapi.com/v1/future.json?'
+const base_url = 'https://api.weatherapi.com/v1/future.json?'
 const key = '373fc7ab5c9943f0b2e184237241410'
 
 const params = new URLSearchParams(window.location.search)

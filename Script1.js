@@ -1,4 +1,4 @@
-const base_url = 'http://api.weatherapi.com/v1/forecast.json?'
+const base_url = 'https://api.weatherapi.com/v1/forecast.json?'
 const key = '373fc7ab5c9943f0b2e184237241410'
 
 document.addEventListener('DOMContentLoaded', async () => {

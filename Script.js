@@ -1,4 +1,4 @@
-const base_url = 'http://api.weatherapi.com/v1/current.json?'
+const base_url = 'https://api.weatherapi.com/v1/current.json?'
 const key = '373fc7ab5c9943f0b2e184237241410'
 let btn = document.querySelector('#btn')
 let btn2 = document.querySelector('#btn2')
