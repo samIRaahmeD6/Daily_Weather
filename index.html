@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+
+    <title>Daily Weather</title>
+  </head>
+  <body>
+    <div id="info">
+      <div>
+        <h1 id="country">Bd</h1>
+        <h2 id="temp"></h2>
+      </div>
+      <div class="names">
+        <h3 id="name">bd</h3>
+        <h3>,</h3>
+        <h3 id="region">bd</h3>
+      </div>
+      <div class="displayicon">
+        <img id="weather-icon" alt="Weather icon" />
+        <p id="condition-text"></p>
+      </div>
+      <div>
+        <h6 id="localtime"></h6>
+      </div>
+    </div>
+    <div class="inputs">
+      <form action="">
+        <input type="text" id="input" value="Bangladesh" />
+        <button id="btn" type="button">Search</button>
+      </form>
+      <div class="hourlyUpdate">
+        <button id="hourlyUpdateBtn" onclick="redirectToHourlyUpdate()">
+          Hourly Update <i class="fa-solid fa-arrow-right"></i>
+        </button>
+      </div>
+    </div>
+    <div class="container">
+      <div class="info">
+        <div class="windinfo">
+          <label for="">Wind:</label>
+          <p id="wind_mph"></p>
+        </div>
+        <div class="windinfo">
+          <label for="">Wind:</label>
+          <p id="wind_kph"></p>
+        </div>
+        <div class="windinfo">
+          <label for="">Wind Chill:</label>
+          <p id="windchill_c"></p>
+        </div>
+        <div class="windinfo">
+          <label for="">Wind Chill:</label>
+          <p id="windchill_f"></p>
+        </div>
+      </div>
+      <div class="container-2">
+        <div class="info">
+          <div class="feelslike">
+            <label for="">Feels like:</label>
+            <p id="feelslike_c"></p>
+          </div>
+          <div class="feelslike">
+            <label for="">Feels like:</label>
+            <p id="feelslike_f"></p>
+          </div>
+        </div>
+        <div class="info">
+          <div class="humid">
+            <label for="">Humidity:</label>
+            <p id="humidity"></p>
+          </div>
+          <div class="humid">
+            <label for="">Cloud:</label>
+            <p id="cloud"></p>
+          </div>
+        </div>
+      </div>
+      <div class="container-3">
+        <div class="info">
+          <div class="airQuality"><p>Air Quality</p></div>
+          <div class="airQuality">
+            <label for="">CO: </label>
+
+            <p id="co"></p>
+          </div>
+          <div class="airQuality">
+            <label for="">NO2:</label>
+            <p id="no2"></p>
+          </div>
+          <div class="airQuality">
+            <label for="">O3:</label>
+            <p id="o3"></p>
+          </div>
+          <div class="airQuality">
+            <label for="">SO2:</label>
+            <p id="so2"></p>
+          </div>
+        </div>
+      </div>
+      <div class="container-4">
+        <div class="info">
+          <div class="heatindex">
+            <label for="">Heat Index:</label>
+            <p id="heatindex_c"></p>
+          </div>
+
+          <div class="heatindex">
+            <label for="">Heat Index:</label>
+            <p id="heatindex_f"></p>
+          </div>
+        </div>
+        <div class="info">
+          <div class="dewpoint">
+            <label for="">dewpoint</label>
+            <p id="dewpoint_c"></p>
+          </div>
+          <div class="precipinfo">
+            <label for="">dewpoint</label>
+            <p id="dewpoint_f"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="dailyContainer">
+      <h1>want to know the forecast for the upcoming days?</h1>
+      <div class="inputs2">
+        <input type="text" id="input2" placeholder="yyyy-mm-dd" />
+        <button id="btn2" type="button" onclick="redirectToFutureForecasting()">
+          Search
+        </button>
+      </div>
+    </div>
+
+    <script src="Script.js"></script>
+  </body>
+</html>
