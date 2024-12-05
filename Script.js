@@ -1,8 +1,8 @@
 const base_url = 'https://api.weatherapi.com/v1/current.json?'
-const key = '373fc7ab5c9943f0b2e184237241410'
+const key = 'fc117308f4eb4a6887f111819241511'
 let btn = document.querySelector('#btn')
-let btn2 = document.querySelector('#btn2')
-let input2 = document.querySelector('#input2')
+// let btn2 = document.querySelector('#btn2')
+// let input2 = document.querySelector('#input2')
 let info = document.querySelector('#info')
 
 async function FetchDailyWeather(country) {
@@ -15,7 +15,7 @@ async function FetchDailyWeather(country) {
       console.log(data)
       return data
     } catch (error) {
-      console.error('hello' + error)
+      console.error(error)
     }
   }
 }
@@ -51,18 +51,18 @@ function displayWeatherInfo(data) {
       btn.style.backgroundColor = '#5B99C2'
     })
 
-    input2.style.backgroundColor = '#5B99C2'
-    input2.style.color = 'black'
+    // input2.style.backgroundColor = '#5B99C2'
+    // input2.style.color = 'black'
 
-    btn2.style.backgroundColor = '#5B99C2'
-    btn2.style.color = 'black'
-    btn2.addEventListener('mouseenter', () => {
-      btn2.style.backgroundColor = '#4A7A92'
-    })
+    // btn2.style.backgroundColor = '#5B99C2'
+    // btn2.style.color = 'black'
+    // btn2.addEventListener('mouseenter', () => {
+    //   btn2.style.backgroundColor = '#4A7A92'
+    // })
 
-    btn2.addEventListener('mouseleave', () => {
-      btn2.style.backgroundColor = '#5B99C2'
-    })
+    // btn2.addEventListener('mouseleave', () => {
+    //   btn2.style.backgroundColor = '#5B99C2'
+    // })
 
     for (let i = 0; i < info.length; i++) {
       info[i].style.backgroundColor = '#5B99C2'
@@ -74,8 +74,8 @@ function displayWeatherInfo(data) {
     input.style.backgroundColor = '#181C14'
     input.style.color = '#ECDFCC'
 
-    input2.style.backgroundColor = '#181C14'
-    input2.style.color = '#ECDFCC'
+    // input2.style.backgroundColor = '#181C14'
+    // input2.style.color = '#ECDFCC'
 
     btn.style.backgroundColor = '#181C14'
     btn.style.color = '#ECDFCC'
@@ -87,15 +87,15 @@ function displayWeatherInfo(data) {
       btn.style.backgroundColor = '#181C14'
     })
 
-    btn2.style.backgroundColor = '#181C14'
-    btn2.style.color = '#ECDFCC'
-    btn2.addEventListener('mouseenter', () => {
-      btn2.style.backgroundColor = '#232323'
-    })
+    // btn2.style.backgroundColor = '#181C14'
+    // btn2.style.color = '#ECDFCC'
+    // btn2.addEventListener('mouseenter', () => {
+    //   btn2.style.backgroundColor = '#232323'
+    // })
 
-    btn2.addEventListener('mouseleave', () => {
-      bt2.style.backgroundColor = '#181C14'
-    })
+    // btn2.addEventListener('mouseleave', () => {
+    //   bt2.style.backgroundColor = '#181C14'
+    // })
     for (let i = 0; i < info.length; i++) {
       info[i].style.backgroundColor = '#181C14'
     }
@@ -177,7 +177,6 @@ btn.addEventListener('click', async (evt) => {
     console.error('Error' + error)
   }
 })
-
 function redirectToHourlyUpdate() {
   const country = document.querySelector('#input').value
   if (country) {
@@ -187,12 +186,4 @@ function redirectToHourlyUpdate() {
   } else {
     alert('Please enter a country name!')
   }
-}
-function redirectToFutureForecasting() {
-  const country = document.getElementById('input').value
-  const date = document.getElementById('input2').value
-  const url = `futureForecast.html?country=${encodeURIComponent(
-    country
-  )}&date=${encodeURIComponent(date)}`
-  window.location.href = url
 }

@@ -1,5 +1,5 @@
 const base_url = 'https://api.weatherapi.com/v1/forecast.json?'
-const key = '373fc7ab5c9943f0b2e184237241410'
+const key = 'fc117308f4eb4a6887f111819241511'
 
 document.addEventListener('DOMContentLoaded', async () => {
   const params = new URLSearchParams(window.location.search)
